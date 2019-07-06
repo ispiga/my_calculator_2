@@ -1,18 +1,22 @@
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
-<script type="text/javascript">
-function cube() {
-var num = document.getElementById("n1");
-num.value = Math.pow(num.value, 3);
-}
-</script>
 </head>
 <body>
 <h1>Calculadora de Ismael Pinzón</h1>
 Number:
 <input type="text" id="n1">
 <p>
+<button onclick="squared()"> x^2 </button>
 <button onclick="cube()"> x^3 </button>
 </p>
+<script type="text/javascript">
+var num = document.getElementById("n1");
+function squared() {
+num.value = Math.pow(num.value, 2);
+}
+function cube() {
+num.value = Math.pow(num.value, 3);
+}
+</script>
 </body>
 </html>
